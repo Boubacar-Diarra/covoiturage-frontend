@@ -1,0 +1,61 @@
+﻿@page "/updateuser"
+@using Covoiturage.Payloads.Request
+@inject HttpClient HttpClient
+@inject IJSRuntime Js
+<form class="col-sm-4">
+    <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" @bind-value="_registerRequest.username" />
+    </div>
+    <div class="form-group">
+        <label>Nom</label>
+        <input class="form-control" @bind-value="_registerRequest.nom" />
+    </div>
+    <div class="form-group">
+        <label>Téléphone</label>
+        <input class="form-control" @bind-value="_registerRequest.telephone" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" @bind-value="_registerRequest.email" />
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" @bind="_registerRequest.description"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary" @onclick="() => Update()">Mettre à jour</button>
+    </div>
+</form>
+
+@code {
+    private RegisterRequest _registerRequest = new RegisterRequest();
+    //private string userId;
+    protected override async Task OnInitializedAsync()
+    {
+        var userId = await Js.InvokeAsync<string>("getItemLs", new object[] { "id" });
+        Console.WriteLine(userId);
+        Console.WriteLine(555);
+
+        var res = await HttpClient.GetAsync("http://localhost:8080/api/auth/"+userId);
+        if (res.IsSuccessStatusCode)
+        {
+            _registerRequest = await res.Content.ReadFromJsonAsync<RegisterRequest>();
+            //Console.WriteLine(_registerRequest.username);
+            StateHasChanged();
+        }
+    }
+
+    private async void Update()
+    {
+        var res = await HttpClient.PutAsJsonAsync("http://localhost:8080/api/auth/update", _registerRequest);
+        if (res.IsSuccessStatusCode)
+        {
+            await Js.InvokeVoidAsync("showToast", "succes", "Mise à jour effectuée avec succès");
+        }
+        else
+        {
+            await Js.InvokeVoidAsync("showToast", "error", "Mise à jour échouée");
+        }
+    }
+}

@@ -1,0 +1,37 @@
+﻿@page "/recherche"
+@using Covoiturage.Payloads.Request
+
+<div class="row">
+    <form class="col-sm-3">
+        <div class="form-group">
+            <label>Prix</label>
+            <input type="text" class="form-control" @bind-value="rechercheRequest.prix" />
+        </div>
+        <div class="form-group">
+            <label>Lieu de depart</label>
+            <input type="text" class="form-control" @bind-value="rechercheRequest.lieuDepart" />
+        </div>
+        <div class="form-group">
+            <label>Lieu d'arrivée</label>
+            <input type="text" class="form-control" @bind-value="rechercheRequest.lieuArrivee" />
+        </div>
+        <div class="form-group">
+            <label>Date de depart</label>
+            <input type="date" class="form-control" @bind-value="rechercheRequest.dateDepart" />
+        </div>
+        <div class="form-group">
+            <label>Type voiture</label>
+            <input type="text" class="form-control" @bind-value="rechercheRequest.typeVoiture" />
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary">lancer la recherche</button>
+        </div>
+    </form>
+    <div class="col">
+        <p class="bg-dark">ff</p>
+    </div>
+</div>
+
+@code {
+    private RechercheRequest rechercheRequest = new RechercheRequest();
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\diarr\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\diarr\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Covoiturage.821646265.00" t="ExcludeRecursive" />
+    <e p="C:\Users\diarr\source\repos\Covoiturage" t="IncludeFlat">
+      <e p="Covoiturage" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
+        <e p="App.razor" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Covoiturage.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="Covoiturage.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="Counter.razor" t="Include" />
+          <e p="FetchData.razor" t="Include" />
+          <e p="Index.razor" t="Include" />
+          <e p="Loading.razor" t="Include" />
+          <e p="Login.razor" t="Include" />
+          <e p="MesDemandes.razor" t="Include" />
+          <e p="MesOffres.razor" t="Include" />
+          <e p="Offre.razor" t="Include" />
+          <e p="Recherche.razor" t="Include" />
+        </e>
+        <e p="Payloads" t="Include">
+          <e p="Request" t="Include">
+            <e p="DemandeRequest.cs" t="Include" />
+            <e p="EscaleRequest.cs" t="Include" />
+            <e p="LoginRequest.cs" t="Include" />
+            <e p="OffreRequest.cs" t="Include" />
+            <e p="RechercheRequest.cs" t="Include" />
+            <e p="RegisterRequest.cs" t="Include" />
+            <e p="VoitureRequest.cs" t="Include" />
+          </e>
+          <e p="Response" t="Include">
+            <e p="LoginResponse.cs" t="Include" />
+            <e p="MessageResponse.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="LoginLayout.razor" t="Include" />
+          <e p="MainLayout.razor" t="Include" />
+          <e p="NavMenu.razor" t="Include" />
+          <e p="SurveyPrompt.razor" t="Include" />
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="app.css" t="Include" />
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.min.css" t="Include" />
+              <e p="bootstrap.min.css.map" t="Include" />
+            </e>
+            <e p="open-iconic" t="Include">
+              <e p="font" t="Include">
+                <e p="css" t="Include">
+                  <e p="open-iconic-bootstrap.min.css" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="open-iconic.eot" t="Include" />
+                  <e p="open-iconic.otf" t="Include" />
+                  <e p="open-iconic.svg" t="Include" />
+                  <e p="open-iconic.ttf" t="Include" />
+                  <e p="open-iconic.woff" t="Include" />
+                </e>
+              </e>
+              <e p="FONT-LICENSE" t="Include" />
+              <e p="ICON-LICENSE" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
+            <e p="toastr.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="icon-512.png" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="manifest.json" t="Include" />
+          <e p="sample-data" t="Include">
+            <e p="weather.json" t="Include" />
+          </e>
+          <e p="service-worker.js" t="Include" />
+          <e p="service-worker.published.js" t="Include" />
+        </e>
+      </e>
+      <e p="Covoiturage.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

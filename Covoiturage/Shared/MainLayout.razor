@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime Js
+@inject NavigationManager NavigationManager
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+@code{
+
+    protected override async void OnInitialized()
+    {
+        var token = await Js.InvokeAsync<string>("getItemLs", new object[] { "token" });
+        if(string.IsNullOrEmpty(token))
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+}

@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.ProtectedBrowserStorage" Path="C:\Users\diarr\.nuget\packages\microsoft.aspnetcore.protectedbrowserstorage\0.1.0-alpha.19521.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="C:\Users\diarr\source\repos\Covoiturage\Covoiturage\bin\Debug\netstandard2.1\wwwroot\" />
+</StaticWebAssets>
